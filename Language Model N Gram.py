@@ -3,6 +3,8 @@ from collections import Counter
 from nltk import ngrams
 import nltk
 
+# Download necessary NLTK resources
+nltk.download('punkt')
 
 # Step 1: Generate a large text corpus (simulated)
 sample_sentences = [
