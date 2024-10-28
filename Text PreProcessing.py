@@ -3,6 +3,10 @@ from nltk.stem import PorterStemmer, WordNetLemmatizer
 import re
 import string
 
+# Download necessary NLTK resources
+nltk.download('punkt')
+nltk.download('wordnet')
+
 # Sample corpus from Wikipedia (as an example)
 texts = [
     "The quick brown fox jumps over the lazy dog. It is a common pangram.",
@@ -44,3 +48,4 @@ cleaned_texts = [preprocess_text(text) for text in texts]
 for i in range(len(texts)):  # Show all examples
     print(f"Original Text: {texts[i]}")
     print(f"Cleaned Text: {cleaned_texts[i]}\n")
+
